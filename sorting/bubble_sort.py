@@ -17,4 +17,3 @@ def improved_bubble_sort(lst):
                 bl = True
         i += 1
     return lst
-
