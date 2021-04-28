@@ -23,14 +23,3 @@ def countingSort(arr, grade) -> None:
 def radixSort(arr, grade) -> None:
     for i in range(grade):
         countingSort(arr, i)
-
-
-name = input("Enter name of file: ")
-with open(name, "r") as file:
-    arr = [int(line) for line in file]
-    d = arr[0]
-    arr = arr[1:]
-    with open("is03_Shpachuk_05.txt", "w") as output:
-        radixSort(arr, d)
-        for i in arr:
-            output.write(f"{i}\n")
